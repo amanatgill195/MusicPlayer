@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddMusic"
+    tools:showIn="@layout/activity_add_music">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="Track Title: "
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/quicksand_regular"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="Upload File"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/capsule_button"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="Select File"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="Upload Thumbnail "
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/capsule_button"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="Select File"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/capsule_button"
+        android:fontFamily="@font/quicksand_regular"
+        android:gravity="center_horizontal"
+        android:text="Add Music to Library"
+        android:textColor="@color/white" />
+</LinearLayout>
